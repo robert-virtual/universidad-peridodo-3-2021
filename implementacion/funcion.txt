@@ -1,0 +1,48 @@
+string ValidarDNI(string dni)
+        {
+
+            long trash = 0;
+            if (!(long.TryParse(dni, out trash)))
+            {
+                return "No es un numero";
+            }
+
+            if (dni.Length != 13)
+            {
+                return "no tiene 13 caracteres";
+            }
+
+            string depto = dni.Remove(2);
+
+            int municipio = int.Parse(dni.Remove(4).Substring(2));
+
+            int year = int.Parse(dni.Substring(4).Remove(4));
+
+            string codigoUnico = dni.Substring(8);
+
+
+            //convertir
+            int deptoInt = int.Parse(depto);
+
+
+
+
+            //70-03
+            if (deptoInt <= 0 || deptoInt > 18)
+            {
+                return "departamento no es valido";
+
+            }
+
+            if (municipio <= 0 || municipio > 28)
+            {
+                return "municipio no es valido";
+            }
+
+            if (year < 1821 || year >= DateTime.Now.Year-18) // 2003 --hola futuros nosostros 
+            {
+                return $"año no es valido año: {year}";
+            }
+
+            return null;
+        }

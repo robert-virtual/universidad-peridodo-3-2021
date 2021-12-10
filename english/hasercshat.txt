@@ -1,0 +1,12 @@
+Console.WriteLine("Hello!");
+		
+		var ph = new Microsoft.AspNet.Identity.PasswordHasher();
+		
+		var hash = ph.HashPassword("test");
+		
+		var isCurrentHashValid = ph.VerifyHashedPassword(hash, "test");
+		var isOlderHashValid = ph.VerifyHashedPassword("AO7kszlVq1gUsEN6eEwH9WcbppmJlG0qtZpmG65xdklCa89AalTbiA+uXXCOVjzDXw==", "test");
+		
+		Console.WriteLine("Hash is " + hash);
+		Console.WriteLine("isCurrentHashValid " + isCurrentHashValid);
+		Console.WriteLine("isOlderHashValid " + isOlderHashValid);

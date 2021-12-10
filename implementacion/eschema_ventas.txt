@@ -1,0 +1,94 @@
+Producto: 
+	- int Id
+	- string Nombre
+	- decimal Precio
+	- int Cantidad
+	- decimal Impuesto
+	- int CategoriaId
+	- Categoria Categoria
+
+Categoria: 
+	- int Id
+	- string Nombre
+	- List<Producto> Productos
+	
+TipoVenta:
+	- int Id
+	- string Nombre
+	- List<Venta> Ventas 
+
+Detalleventa:
+	- int VentaCodigoFactura
+	- Venta Venta
+	- int ProductoId
+	- Producto Producto
+	- decimal PrecioVenta
+	- decimal Descuento
+
+Venta:
+	- int Codigofactura
+	- string ColaboradorDNI
+	- Colaborador Colaborador
+	- string ClienteDNI
+	- Cliente Cliente
+	- List<DetalleVenta> DetallesVenta
+	- int TipoVentaId
+	- TipoVenta TipoVenta
+	- decimal Prima
+	- int Cuotas
+	- DateTime Fecha
+	- DateTime FechaVencimiento
+	
+Cliente: 
+	- string DNI
+	- string RTN
+	- string Nombre
+	- string Direccion
+	- string Telefono
+	- List<Venta> Ventas
+	- DateTime FechaRegistro
+
+Colaborador: 
+	- string DNI
+	- string RTN
+	- string Nombre
+	- string Direccion
+	- string Email
+	- string Telefono
+	- string Clave
+	- int PuestoId
+	- Puesto Puesto
+	- List<Venta> Ventas
+	- DateTime FechaNacimiento
+	- DateTime FechaContratado
+	- DateTime FechaFinContrato
+	- bool Activo
+	
+Puesto:
+	- int Id
+	- string Nombre
+	- List<Colaborador> Colaboradores
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

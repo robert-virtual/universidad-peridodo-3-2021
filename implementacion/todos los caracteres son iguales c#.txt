@@ -1,0 +1,22 @@
+string dni = "555555555555";
+            string copiaDni = dni.Remove(12);
+
+            Console.WriteLine(copiaDni);
+
+            var mitad1 = copiaDni.Remove(6);
+            var mitad = copiaDni.Substring(6);
+
+
+            Console.WriteLine(mitad1);
+            Console.WriteLine(mitad);
+            
+            
+            if (mitad1 == mitad)
+            {
+                Console.WriteLine("Toddos o la mayoria de caracteres son iguales");
+
+            } else
+            {
+
+                Console.WriteLine("Los caracteres No son iguales");
+            }

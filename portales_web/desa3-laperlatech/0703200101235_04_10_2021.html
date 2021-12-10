@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Inicio</title>
+    <style>
+      * {
+        font-family: sans-serif;
+        background-color: #333;
+        color: white;
+      }
+      button {
+        background: none;
+        border: none;
+        background-color: gray;
+      }
+      button:hover {
+        box-shadow: 0 0 6px;
+      }
+      button:hover + h2 {
+        color: orange;
+      }
+      input {
+        outline: none;
+        border: gray solid 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Hola mundo</h2>
+    <form>
+      <input type="name" placeholder="name" name="name" required />
+      <button type="submit">Enviar</button>
+      <h2>Enviar?</h2>
+    </form>
+  </body>
+
+  <script>
+    document.addEventListener("submit", ({ target: { name } }) =>
+      alert(`Hola ${name.value}`)
+    );
+  </script>
+</html>

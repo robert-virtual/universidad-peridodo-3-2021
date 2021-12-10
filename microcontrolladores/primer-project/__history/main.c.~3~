@@ -1,0 +1,10 @@
+#include<16f628a.h>
+#fuses NOMCLR
+
+int main(){
+
+  
+   return 0;
+}
+
+

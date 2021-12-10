@@ -1,0 +1,238 @@
+CCS PCM C Compiler, Version 5.015, 5967               20-oct.-21 14:57
+
+               Filename:   C:\Users\rober\Documents\universidad\microcontrolladores\19_10_2021\main.lst
+
+               ROM used:   159 words (8%)
+                           Largest free fragment is 1889
+               RAM used:   6 (3%) at main() level
+                           9 (4%) worst case
+               Stack used: 1 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   019
+0003:  NOP
+.................... #include <16f628a.h> 
+.................... //////////// Standard Header file for the PIC16F628A device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2013 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F628A 
+....................  
+.................... #list 
+....................  
+.................... #fuses INTRC,NOMCLR,NOWDT 
+.................... #use delay(clock=4M) 
+0004:  MOVLW  24
+0005:  MOVWF  04
+0006:  BCF    03.7
+0007:  MOVF   00,W
+0008:  BTFSC  03.2
+0009:  GOTO   018
+000A:  MOVLW  01
+000B:  MOVWF  78
+000C:  CLRF   77
+000D:  DECFSZ 77,F
+000E:  GOTO   00D
+000F:  DECFSZ 78,F
+0010:  GOTO   00C
+0011:  MOVLW  4A
+0012:  MOVWF  77
+0013:  DECFSZ 77,F
+0014:  GOTO   013
+0015:  GOTO   016
+0016:  DECFSZ 00,F
+0017:  GOTO   00A
+0018:  RETURN
+....................  
+.................... #byte port_b=0x06 
+.................... #byte tris_b=0x86 
+....................  
+.................... void main(){ 
+0019:  MOVF   03,W
+001A:  ANDLW  1F
+001B:  MOVWF  03
+001C:  BSF    03.5
+001D:  BSF    0E.3
+001E:  MOVLW  07
+001F:  BCF    03.5
+0020:  MOVWF  1F
+0021:  BCF    03.7
+....................    tris_b = 0b00000000; 
+0022:  BSF    03.5
+0023:  CLRF   06
+....................    
+....................    while(1){ 
+....................       port_b = 0b11111111; 
+0024:  MOVLW  FF
+0025:  BCF    03.5
+0026:  MOVWF  06
+....................       delay_ms(100); 
+0027:  MOVLW  64
+0028:  MOVWF  24
+0029:  CALL   004
+....................       int k = 7; 
+002A:  MOVLW  07
+002B:  MOVWF  21
+....................       for(int i = 0; i < 8; i += 2){ 
+002C:  CLRF   22
+002D:  MOVF   22,W
+002E:  SUBLW  07
+002F:  BTFSS  03.0
+0030:  GOTO   06B
+....................  
+....................  
+....................           bit_set(port_b,i); 
+0031:  MOVLW  01
+0032:  MOVWF  77
+0033:  MOVF   22,W
+0034:  MOVWF  78
+0035:  BTFSC  03.2
+0036:  GOTO   03B
+0037:  BCF    03.0
+0038:  RLF    77,F
+0039:  DECFSZ 78,F
+003A:  GOTO   037
+003B:  MOVF   77,W
+003C:  IORWF  06,F
+....................           bit_set(port_b,k); 
+003D:  MOVLW  01
+003E:  MOVWF  77
+003F:  MOVF   21,W
+0040:  MOVWF  78
+0041:  BTFSC  03.2
+0042:  GOTO   047
+0043:  BCF    03.0
+0044:  RLF    77,F
+0045:  DECFSZ 78,F
+0046:  GOTO   043
+0047:  MOVF   77,W
+0048:  IORWF  06,F
+....................             delay_ms(100); 
+0049:  MOVLW  64
+004A:  MOVWF  24
+004B:  CALL   004
+....................             bit_clear(port_b,i);    
+004C:  MOVLW  01
+004D:  MOVWF  77
+004E:  MOVF   22,W
+004F:  MOVWF  78
+0050:  BTFSC  03.2
+0051:  GOTO   056
+0052:  BCF    03.0
+0053:  RLF    77,F
+0054:  DECFSZ 78,F
+0055:  GOTO   052
+0056:  MOVF   77,W
+0057:  XORLW  FF
+0058:  ANDWF  06,F
+....................             bit_clear(port_b,k);    
+0059:  MOVLW  01
+005A:  MOVWF  77
+005B:  MOVF   21,W
+005C:  MOVWF  78
+005D:  BTFSC  03.2
+005E:  GOTO   063
+005F:  BCF    03.0
+0060:  RLF    77,F
+0061:  DECFSZ 78,F
+0062:  GOTO   05F
+0063:  MOVF   77,W
+0064:  XORLW  FF
+0065:  ANDWF  06,F
+....................           k-=2; 
+0066:  MOVLW  02
+0067:  SUBWF  21,F
+0068:  MOVLW  02
+0069:  ADDWF  22,F
+006A:  GOTO   02D
+....................        
+....................  
+....................           
+....................       } 
+....................        
+....................       for(int j = 8; j > 0; j--){ 
+006B:  MOVLW  08
+006C:  MOVWF  23
+006D:  MOVF   23,F
+006E:  BTFSC  03.2
+006F:  GOTO   099
+....................          if(j%2 != 0){ 
+0070:  MOVF   23,W
+0071:  ANDLW  01
+0072:  BTFSC  03.2
+0073:  GOTO   090
+....................         bit_set(port_b,j); 
+0074:  MOVLW  01
+0075:  MOVWF  77
+0076:  MOVF   23,W
+0077:  MOVWF  78
+0078:  BTFSC  03.2
+0079:  GOTO   07E
+007A:  BCF    03.0
+007B:  RLF    77,F
+007C:  DECFSZ 78,F
+007D:  GOTO   07A
+007E:  MOVF   77,W
+007F:  IORWF  06,F
+....................          delay_ms(100); 
+0080:  MOVLW  64
+0081:  MOVWF  24
+0082:  CALL   004
+....................          bit_clear(port_b,j);    
+0083:  MOVLW  01
+0084:  MOVWF  77
+0085:  MOVF   23,W
+0086:  MOVWF  78
+0087:  BTFSC  03.2
+0088:  GOTO   08D
+0089:  BCF    03.0
+008A:  RLF    77,F
+008B:  DECFSZ 78,F
+008C:  GOTO   089
+008D:  MOVF   77,W
+008E:  XORLW  FF
+008F:  ANDWF  06,F
+....................          } 
+....................           
+....................       port_b = 0b10101010; 
+0090:  MOVLW  AA
+0091:  MOVWF  06
+....................      
+....................     
+....................       delay_ms(100); 
+0092:  MOVLW  64
+0093:  MOVWF  24
+0094:  CALL   004
+....................       port_b = 0b01010101; 
+0095:  MOVLW  55
+0096:  MOVWF  06
+0097:  DECF   23,F
+0098:  GOTO   06D
+....................       } 
+....................       delay_ms(100); 
+0099:  MOVLW  64
+009A:  MOVWF  24
+009B:  CALL   004
+009C:  BSF    03.5
+009D:  GOTO   024
+....................  
+....................    } 
+.................... } 
+....................  
+009E:  SLEEP
+....................  
+....................  
+....................  
+....................  
+
+Configuration Fuses:
+   Word  1: 3F51   NOWDT PUT INTRC NOMCLR BROWNOUT NOLVP NOCPD NOPROTECT

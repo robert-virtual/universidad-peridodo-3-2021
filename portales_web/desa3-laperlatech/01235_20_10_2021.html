@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portales web 1 | Contacto</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      .slider {
+        display: flex;
+        flex-direction: row;
+      }
+      form * {
+        margin: 5px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Desarrollo de Portales Web 1</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="./index.html">Inicio</a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Universidad Catolica de Honduras</h2>
+      <p>Campus Global</p>
+    </section>
+    <main>
+      <h2>Contacto</h2>
+      <form action="#">
+        <fieldset>
+          <legend>Complete los Campos para Cotactar al Docente</legend>
+          <label for="name">*Nombre</label>
+          <input type="text" name="name" placeholder="Ej: Roberto" required />
+          <label for="name">Apellido</label>
+          <input type="text" name="name" placeholder="Ej: Castillo" />
+
+          <label for="email">*Email</label>
+          <input type="text" name="email" placeholder="Email" required />
+          <label for="date">Fecha </label>
+          <input type="date" name="date" />
+          <label for="tel">Telefono</label>
+          <input
+            type="tel"
+            name="tel"
+            maxlength="8"
+            minlength="8"
+            placeholder="Tel"
+          />
+          <label for="msg">Mensaje</label>
+          <textarea name="msg" id="" cols="30" rows="10"></textarea>
+
+          <button>Enviar</button>
+          <!-- por defecto el formalario asume q este boton
+          es el de submit -->
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <h4>Footer</h4>
+      <p>Todos los derechos reservados &copy; Roberto Castillo&trade;</p>
+    </footer>
+  </body>
+</html>

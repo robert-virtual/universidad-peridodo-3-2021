@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="color-theme" content="#333" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inicio</title>
+    <style>
+      * {
+        font-family: sans-serif;
+        background-color: #333;
+        color: white;
+     
+      }
+     
+      h2 {
+        text-align: center;
+      }
+      article {
+        display: flex;
+      }
+      .text p {
+          text-align: start;
+          margin-left: 10px;
+      }
+      .slider{
+          display: flex;
+          justify-content: center;
+      }
+      .slider button {
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Hello world!</h2>
+    <section>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur vitae
+        perspiciatis, nisi, nam in deserunt repellat excepturi, reiciendis
+        veritatis officiis quae possimus. Eum quae, eaque sapiente
+        necessitatibus dolorem vero itaque?
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. At tempore,
+        expedita sit voluptatibus nisi iste dicta aliquam sed facere ipsam eos
+        perferendis minus vero tenetur temporibus consequatur voluptatem quod
+        eveniet?
+      </p>
+      <article>
+        <img
+          width="500"
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1172&q=80"
+          alt="Computadora"
+        />
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            fuga, similique minus eligendi explicabo sed necessitatibus vero
+            accusantium delectus inventore aliquam adipisci velit id eveniet,
+            temporibus, fugiat quis itaque tempora.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+            eveniet neque incidunt consequatur dignissimos quo nisi perspiciatis
+            tempora fugit corrupti recusandae adipisci sapiente, qui mollitia
+            minus ipsam porro distinctio. In.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint vel
+            nulla nam laudantium aspernatur hic repellat debitis, amet deleniti
+            placeat voluptate ullam dicta esse animi aliquam provident qui
+            voluptatem quibusdam!
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              exercitationem voluptas ipsam tenetur labore, mollitia sint iure minus
+              iusto magnam veniam pariatur dicta, eligendi eum corrupti corporis
+              dignissimos, odit doloremque.
+            </p>
+          </p>
+        </div>
+      </article>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe provident
+        corrupti alias voluptatem, quia assumenda repellat consequatur
+        accusantium necessitatibus excepturi sequi pariatur quisquam in, error
+        enim possimus cumque at ipsa?
+      </p>
+
+      <div class="slider">
+          <button>⬅️</button>
+          <img
+          id="slider-img"
+          width="500" 
+          src="https://images.unsplash.com/photo-1603468620905-8de7d86b781e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="img">
+          <button >➡️</button>
+      </div>
+
+      <section> 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quos voluptatum neque sapiente? Voluptatem rerum, beatae aspernatur dolore, eos provident, eveniet neque nisi odio officia commodi pariatur? Tempore, voluptas reprehenderit.</p>
+      </section>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae fugit voluptas accusantium tempore, a officiis atque cupiditate dignissimos fuga eius saepe quam nostrum omnis sint reiciendis, molestiae velit at!</p>
+    </section>
+    <script>
+        const {random,round} = Math
+        const d = document; 
+        const img = d.getElementById("slider-img")
+        d.addEventListener('click',({target})=>{
+            if (target.matches("button")) {
+                console.log('new img');
+                img.src = `https://picsum.photos/id/${round(random()*100)}/200/300`
+            }
+        })
+
+    </script>
+  </body>
+</html>

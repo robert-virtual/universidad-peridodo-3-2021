@@ -1,0 +1,23 @@
+:root {
+  --color: white;
+  --bg-color: #333;
+}
+* {
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--color);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  font-size: 25px;
+  background-color: none;
+  border: none;
+  transition: all 0.75s;
+}
+
+#btnTheme:hover {
+  transform: rotate(180deg);
+}

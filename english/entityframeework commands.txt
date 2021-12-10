@@ -1,0 +1,6 @@
+Enable-Migrations
+
+Add-Migration InitialDBCreation
+
+
+Update-Database

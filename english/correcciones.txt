@@ -1,0 +1,3 @@
+agregar campo de decxueno y bloquear el campo de precio de prodcuto en ventas al creditop
+
+copndigo de 

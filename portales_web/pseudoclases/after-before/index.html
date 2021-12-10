@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="css/index.css" />
+    <title>css</title>
+    <style>
+      .caja {
+        position: absolute;
+        padding: 1rem;
+        width: 250px;
+        height: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+      .caja::before {
+        position: absolute;
+        content: "";
+        height: 150%;
+        width: 150%;
+        background: linear-gradient(
+          45deg,
+          #fd004c,
+          #fe9000,
+          #fff020,
+          #3edf4b,
+          #3363ff,
+          #b102b7,
+          #fd004c
+        );
+        left: -25%;
+        top: -25%;
+        animation: spin 1.5s infinite linear;
+      }
+      .caja::after {
+        display: grid;
+        position: absolute;
+        place-items: center;
+        border-radius: 5px;
+        content: "Rainbow";
+        height: 93%;
+        width: 93%;
+        top: 3.5%;
+        left: 3.5%;
+        color: white;
+        letter-spacing: 6px;
+        font-size: 2rem;
+        background-color: #1c1b29;
+      }
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <span>CSS</span>
+      <ul>
+        <li>
+          <a href="/">inicio</a>
+        </li>
+        <li>
+          <a href="gradients.html">Gradientes</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="caja">
+        <h4>Contenido</h4>
+      </div>
+    </main>
+  </body>
+</html>

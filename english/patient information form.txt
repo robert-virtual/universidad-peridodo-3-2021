@@ -1,0 +1,16 @@
+patient information form
+
+last name: Castillo
+first name: Roberto
+
+what are your symptomps?
+sneezing
+
+how long have you had these symptomps?
+two days
+
+are you currently taking any medications?
+No
+
+are you allergic to any medications? 
+No, at least no in my knowledge

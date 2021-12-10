@@ -1,0 +1,26 @@
+date: 2003 december 26
+place:  struck the Kerman province of southeastern Iran
+event: earthquake with a magnitude of 6.6 and a maximum Mercalli intensity
+property damege:
+		- Up to ninety percent of buildings and infrastructure 
+		in the Bam area were either damaged or destroyed  
+		
+		- The earthquake was particularly destructive in Bam,
+		The effects of the earthquake were exacerbated by the 
+		use of mud brick as the standard construction medium; 
+		many of the area's structures did not comply with earthquake 
+		regulations set in 1989. 
+		  
+casualitis:  In terms of human loss the quake was the worst to occur in Iranian history.
+		  the death toll amounting to at least 34,000
+		  people and injuring up to 200,000
+
+
+
+
+A severe earthquake struck the Kerman province of southeastern Iran
+on december 26 2003.  Up to ninety percent of buildings and infrastructure 
+in the Bam area were either damaged or destroyed.
+In terms of human loss the quake was the worst to occur in Iranian history.
+the death toll amounting to at least 34,000 people and injuring up to 200,000
+  

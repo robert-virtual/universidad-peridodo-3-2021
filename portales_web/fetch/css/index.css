@@ -1,0 +1,23 @@
+* {
+  font-family: sans-serif;
+}
+#contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.item {
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: min-content;
+  flex-direction: column;
+  box-shadow: 0 0 6px gray;
+}
+.item-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.item-img {
+  width: 250px;
+}

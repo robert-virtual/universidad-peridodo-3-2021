@@ -1,0 +1,67 @@
+CCS PCM C Compiler, Version 5.015, 5967               21-oct.-21 01:42
+
+               Filename:   C:\Users\rober\Documents\universidad\microcontrolladores\20_10_2021\main.lst
+
+               ROM used:   22 words (1%)
+                           Largest free fragment is 2026
+               RAM used:   5 (2%) at main() level
+                           5 (2%) worst case
+               Stack used: 0 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   004
+0003:  NOP
+.................... #include <16f628a.h> 
+.................... //////////// Standard Header file for the PIC16F628A device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2013 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F628A 
+....................  
+.................... #list 
+....................  
+.................... #fuses INTRC,NOMCLR,NOWDT 
+.................... #use delay(clock=4M) 
+....................  
+.................... #byte port_b=0x06 
+.................... #byte tris_b=0x86 
+....................  
+.................... void main(){ 
+0004:  MOVF   03,W
+0005:  ANDLW  1F
+0006:  MOVWF  03
+0007:  BSF    03.5
+0008:  BSF    0E.3
+0009:  MOVLW  07
+000A:  BCF    03.5
+000B:  MOVWF  1F
+000C:  BCF    03.7
+....................  	tris_b = 0b00000000; 
+000D:  BSF    03.5
+000E:  CLRF   06
+....................   	port_b = 0b11111111;// 
+000F:  MOVLW  FF
+0010:  BCF    03.5
+0011:  MOVWF  06
+....................  
+.................... 	while(true){ 
+.................... 		port_b = 0b00000110; 
+0012:  MOVLW  06
+0013:  MOVWF  06
+0014:  GOTO   012
+....................  
+.................... 	} 
+.................... } 
+0015:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F51   NOWDT PUT INTRC NOMCLR BROWNOUT NOLVP NOCPD NOPROTECT

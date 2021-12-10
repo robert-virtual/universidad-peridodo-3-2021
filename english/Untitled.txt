@@ -1,0 +1,16 @@
+
+survey results:
+
+yeni: a:2,b:2,c:2 
+robert: b:4
+
+Yeni Result: a bit of all (procastinator, a bit of procastinator, organiozed and selft-motivated person)
+
+robert: a bit of procastinator,
+
+Does your score accurately describe the kind of person you are?
+
+yeni: yes, I agree with the survey
+robert: yes, I agree with the survey
+
+

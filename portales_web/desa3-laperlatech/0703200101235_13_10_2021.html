@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="color-theme" content="#333" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inicio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      :root {
+        --nav-heigth: 75px;
+      }
+      header i {
+        color: black;
+      }
+      h1,
+      h2 {
+        text-transform: uppercase;
+      }
+      nav * {
+        margin: 0;
+        color: white;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        z-index: 999;
+        position: sticky;
+        top: 0;
+        height: var(--nav-heigth);
+        background-color: #004cbe;
+      }
+      nav ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+      }
+      nav li {
+        list-style: none;
+      }
+      section {
+        padding-top: 100px;
+        height: 90vh;
+      }
+      section.top {
+        margin: auto;
+        /* width: min-content; */
+        width: min-content;
+        height: min-content;
+      }
+      section.top h2,
+      section.top h3 {
+        position: relative;
+        color: white;
+        left: 50px;
+        bottom: 300px;
+        width: fit-content;
+      }
+      section.top h2 {
+        font-size: 50px;
+      }
+      main,
+      header {
+        margin: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>desarrollo de portales web 1<i class="fas fa-atom"></i></h1>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <i class="fas fa-home"></i>
+          <a href="/">Inicio</a>
+        </li>
+        <li>
+          <i class="fas fa-code"></i>
+          <a href="#diseñoweb">Diseño Web</a>
+        </li>
+        <li>
+          <i class="fas fa-mobile-alt"></i>
+          <a href="#webapps">Aplicaciones Web</a>
+        </li>
+        <li>
+          <i class="fas fa-toolbox"></i>
+          <a href="#cms">CMS</a>
+        </li>
+        <li>
+          <i class="fas fa-address-card"></i>
+          <a href="#contact">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="top">
+      <img src="./img/sap.jpg" alt="imagen campus santiago apostol" />
+      <h2>universidad catolica de honduras</h2>
+      <h3>Campus Santiago Apostol</h3>
+    </section>
+
+    <main>
+      <h2>Temas</h2>
+      <section id="diseñoweb">
+        <h3>Diseño Web</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          mollitia itaque quasi aliquam nisi aspernatur vel excepturi natus
+          necessitatibus provident error accusantium quos soluta minima, eaque
+          illo sequi debitis. Dolorum?
+        </p>
+      </section>
+      <section id="webapps">
+        <h3>Aplicaciones web</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+          facere labore id, culpa architecto deserunt ullam, blanditiis dolorum
+          nemo, nam ex saepe enim tempore veritatis ipsum dignissimos possimus
+          animi? Sequi.
+        </p>
+      </section>
+      <section id="cms">
+        <h3>CMS</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+          dolor corrupti adipisci rem, velit omnis? Soluta, velit! Tenetur
+          facilis harum asperiores, eum impedit voluptate placeat fugit omnis
+          blanditiis nisi quibusdam!
+        </p>
+      </section>
+      <section id="contact">
+        <h3>Contactar</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+          dolor corrupti adipisci rem, velit omnis? Soluta, velit! Tenetur
+          facilis harum asperiores, eum impedit voluptate placeat fugit omnis
+          blanditiis nisi quibusdam!
+        </p>
+      </section>
+    </main>
+
+    <aside>
+      <h3>Soy el aside</h3>
+    </aside>
+    <div>
+      <p>soy un div</p>
+    </div>
+    <footer>
+      <h4>Footer</h4>
+      <p>Todos los derechos reservados &copy; Roberto Castillo&trade;</p>
+    </footer>
+  </body>
+</html>

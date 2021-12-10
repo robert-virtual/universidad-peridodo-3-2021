@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  background: #1b1b1b;
+  padding: 8px 25px;
+}
+.brand {
+  font-size: 1.5rem;
+}
+nav label {
+  display: block;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn span {
+  float: right;
+}
+.menu {
+  position: absolute;
+  top: 50px;
+  background: inherit;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}

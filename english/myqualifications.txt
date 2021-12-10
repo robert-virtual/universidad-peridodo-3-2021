@@ -1,0 +1,29 @@
+
+qualifications: 
+
+	- mathematical ability - I'm great solving equations
+
+	- leadership skills - I'm good leading people to work
+	
+	carrer:
+		about my skills:
+		- I'm great at programing
+		- I'm great web developer
+		
+		experience:
+		- I'm have good experience developing mobile apps
+		  
+	special skills;
+		- logical thinking - I'm graet solving logic problems
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,44 @@
+/*
+padre de 
+slider y prod-info
+*/
+.producto {
+  display: flex;
+}
+.slider {
+  padding: 0;
+  margin-right: 1rem;
+}
+.slider img {
+  width: 400px;
+}
+.slider li {
+  list-style: none;
+  display: none;
+  /*opacity: 0;*/ /*no visible*/
+}
+.slider li:target {
+  display: block;
+  /*opacity: 1;*/ /*visible*/
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+a.active {
+  background-color: blueviolet;
+}

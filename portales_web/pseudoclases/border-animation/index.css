@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 0 1rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.my-border {
+  display: inline-block;
+}
+
+.my-border::after {
+  display: block;
+  content: "";
+  margin: auto;
+  width: 0;
+  height: 2px;
+  background-color: blueviolet;
+  transition: width 0.3s;
+}
+.my-border:hover::after {
+  width: 100%;
+}

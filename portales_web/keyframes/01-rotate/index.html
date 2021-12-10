@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <title>css keyframes</title>
+    <style>
+      .line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 5px;
+        width: 200px;
+        background-color: orange;
+        /* animation: myanimation 3s infinite; */
+      }
+      @keyframes myanimation {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Key frames</h2>
+    <div class="line"></div>
+  </body>
+</html>

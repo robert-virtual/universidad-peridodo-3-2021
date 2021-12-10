@@ -1,0 +1,54 @@
+* {
+  font-family: sans-serif;
+  background-color: #222;
+  color: white;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.box::before {
+  position: absolute;
+  content: "";
+  width: 150%;
+  height: 150%;
+  background: linear-gradient(
+    to top right,
+    blue,
+    orange,
+    blueviolet,
+    green,
+    red,
+    pink
+  );
+  left: -25%;
+  top: -25%;
+  animation: spin 1.5s infinite linear;
+}
+.box::after {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  content: "Robert";
+  width: 93%;
+  height: 93%;
+  top: 3.5%;
+  left: 3.5%;
+  font-size: 4rem;
+  background-color: #222;
+  border-radius: 1rem;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

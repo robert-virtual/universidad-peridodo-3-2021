@@ -1,0 +1,14 @@
+* {
+  font-family: sans-serif;
+}
+h1 {
+  text-transform: capitalize;
+}
+
+.inlinetext {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+}
+.inlinetext img {
+  width: 40vw;
+}

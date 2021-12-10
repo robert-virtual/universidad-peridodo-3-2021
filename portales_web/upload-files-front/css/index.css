@@ -1,0 +1,38 @@
+* {
+  font-family: sans-serif;
+}
+
+.upload {
+  padding: 1rem;
+  margin: 1rem;
+  width: 50vw;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 6px gray;
+}
+
+.drop-zone {
+  display: grid;
+  margin: auto;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  border: 5px dashed;
+  border-color: black;
+  width: 50vw;
+  min-height: 25vw;
+  margin-bottom: 1rem;
+}
+
+article.dragover {
+  border-color: rgb(85, 164, 255);
+}
+
+.drop-item {
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 2px gray;
+}
+#upload-btn {
+  display: block;
+  margin: auto;
+}

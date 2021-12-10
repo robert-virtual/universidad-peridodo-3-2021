@@ -1,0 +1,24 @@
+#include <16f628a.h>
+#fuses INTRC,NOMCLR,NOWDT
+#use delay(clock=4M)
+
+#byte port_b=0x06
+#byte tris_b=0x86
+
+void main(){
+   tris_b = 0b00000000;
+   port_b = 0b00000000;
+   while(1){
+      for(int i = 0; i < 8; i++){
+         bit_set(port_b,i);
+         dela_ms(300);
+         bit_clear(port_b,i);
+         delay_ms(300);
+      }
+   }
+}
+
+
+
+
+

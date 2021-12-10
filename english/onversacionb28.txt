@@ -1,0 +1,72 @@
+the patient: treysi Matinez
+the fried: Francisco
+receptionist: Allison
+doctor: roberto 
+
+
+Scene 1
+
+patient: I've been sneezing.
+
+friend: You may have to go to the doctor.
+
+patient: thanks I really appreciate it.
+
+
+scene 2
+
+patient: I need to make an appointment for a checkup
+
+receptionist:  lets see if I can fit you in. how about tomorrow
+
+patient: could i come in the morning?
+
+receptionist: let me check. would you be able to be here at 10:00
+
+patient: that would be perfect.
+
+receptionist: we'll see then.
+
+patient: thanks I really appreciate it.
+
+
+scene 3
+
+doctor: Miss treysi I'm doctor roberto castillo.
+
+patient: Thanks for fitting me in.
+
+doctor: Luckily, I had a cancellation. Let’s have a look... so... You're not feeling well, are you?
+
+patient: I've sneezing.
+
+doctor: how long have you had these symptoms?
+
+patient: a couple of days
+
+dopctor: are you taking any medication?
+
+patient: No I'm not
+
+doctor: are you allergic to any medications?
+
+patient: no, not in my knowledge
+  
+doctor: let me give you a prepscription for cold tablets.
+
+patient: Are there any side effects?
+
+doctor: No there is not. Don't worry. call me tomorrow and let me know how you feel.
+
+  
+
+
+
+
+
+
+
+
+
+
+

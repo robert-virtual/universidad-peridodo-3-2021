@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.box {
+  position: absolute;
+  top: 7%;
+  opacity: 1;
+  color: white;
+  width: 200px;
+  display: grid;
+  font-size: 2rem;
+  place-items: center;
+  height: 200px;
+  background: linear-gradient(45deg, blueviolet, violet);
+  list-style: none;
+  border-radius: 0.5rem;
+}
+.box a {
+  color: white;
+}
+#visible:checked + div {
+  opacity: 0;
+}
+
+.box2 {
+  position: absolute;
+  background-color: blueviolet;
+  padding: 0.5rem;
+  top: 7%;
+}

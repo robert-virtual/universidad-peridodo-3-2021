@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --dark-color: #333;
+}
+/* selector de elemento combinado con clase espesifida */
+nav.top {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 0 1rem;
+  box-shadow: 0 0 6px gray;
+  align-items: center;
+  justify-content: space-between;
+}
+/* selector de elemento */
+nav ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+/* selector de elemento */
+nav li {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+}
+/* selector de elemento */
+section.reversed {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* selector de elemento */
+main {
+  margin: 2rem;
+}
+
+/* selectores combinados */
+.imgs img {
+  width: 30vw;
+}
+/* selector de clase */
+.imgs {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(226, 226, 226);
+  color: var(--dark-color);
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+}

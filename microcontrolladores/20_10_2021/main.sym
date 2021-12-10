@@ -1,0 +1,50 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+006     port_b
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+086     tris_b
+09B-09C @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+000004  main
+000004  @cinit1
+00000C  @cinit2
+
+Project Directory:
+    C:\Users\rober\Documents\universidad\microcontrolladores\20_10_2021\
+
+Project Files:
+    main.c                                                  [21-oct.-21 01:42  CRC=D872A938]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f628a.h [12-nov.-13 14:34  CRC=44569924]
+
+Source signature=611FDB80
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F628A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

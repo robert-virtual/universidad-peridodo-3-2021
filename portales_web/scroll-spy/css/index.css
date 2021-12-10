@@ -1,0 +1,35 @@
+* {
+  font-family: sans-serif;
+}
+:root {
+  --bg-color: #333;
+}
+body {
+  color: white;
+  background-color: var(--bg-color);
+}
+nav {
+  position: fixed;
+  width: 20%;
+  right: 5rem;
+}
+nav ul {
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  border: red solid 1px;
+  height: 500px;
+}
+
+main {
+  margin: 2rem;
+}
+
+a.active {
+  text-decoration: underline;
+}
